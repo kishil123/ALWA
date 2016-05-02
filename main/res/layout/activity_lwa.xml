@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.aesopworks.iushu.LWAActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_toolbar"
+        android:background="#a9aaf5" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/authorization_code"
+                android:id="@+id/lbl_authcode"
+                android:background="#f5f58d"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/authCode"
+                android:background="#f5f58d"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/lbl_authcode"
+                android:layout_toRightOf="@+id/lbl_authcode"
+                android:layout_toEndOf="@+id/lbl_authcode" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clientid"
+                android:id="@+id/lbl_clntid"
+                android:background="#f5b3ec"
+                android:layout_below="@+id/authCode"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/clntId"
+                android:background="#f5b3ec"
+                android:layout_alignTop="@+id/lbl_clntid"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/lbl_clntid"
+                android:layout_alignLeft="@+id/authCode"
+                android:layout_alignStart="@+id/authCode"
+                android:layout_weight="0.67" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/redirect_uri"
+                android:id="@+id/lbl_redrUri"
+                android:background="#efb7b1"
+                android:layout_below="@+id/lbl_clntid"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/rdrUri"
+                android:background="#efb7b1"
+                android:layout_alignTop="@+id/lbl_redrUri"
+                android:layout_alignLeft="@+id/clntId"
+                android:layout_alignStart="@+id/clntId"
+                android:layout_alignRight="@+id/clntId"
+                android:layout_alignEnd="@+id/clntId" />
+
+            <TextView
+                android:layout_width="440dp"
+                android:layout_height="wrap_content"
+                android:text="Refresh Token"
+                android:id="@+id/lbl_rtkn"
+                android:background="#d9d6ed"
+                android:layout_below="@+id/lbl_redrUri"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/rftkn"
+                android:background="#d9d6ed"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/lbl_rtkn"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_above="@+id/lbl_Acstkn"
+                android:layout_weight="5.88" />
+
+            <TextView
+                android:layout_width="394dp"
+                android:layout_height="wrap_content"
+                android:text="Access Token"
+                android:id="@+id/lbl_Acstkn"
+                android:background="#d1eab7"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/lbl_rtkn"
+                android:layout_alignEnd="@+id/lbl_rtkn"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/actkn"
+                android:background="#d1eab7"
+                android:layout_alignLeft="@+id/lbl_Acstkn"
+                android:layout_alignStart="@+id/lbl_Acstkn"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/lbl_Acstkn"
+                android:layout_weight="6.46" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="seconds"
+                    android:id="@+id/eival" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Automatically Refresh"
+                    android:id="@+id/cb_accesstkn" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get New AT"
+                    android:id="@+id/gnat_btn" />
+            </LinearLayout>
+
+            <WebView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/drswebView" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

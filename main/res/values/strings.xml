@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="iushumdl01">iUSHUMDL01</string>
+    <string name="testserialnosd14">TestSerialNosd14</string>
+    <string name="test">Test</string>
+    <string name="dsn">DSN</string>
+    <string name="device_model">Device Model</string>
+    <string name="authorization_code">Authorization Code</string>
+    <string name="clientid">ClientId</string>
+    <string name="redirect_uri">Redirect Uri</string>
+    <string name="action_settings" />
+    <string name="iushumdl01_cough_cold">iUSHUMDL01_cough_cold</string>
+    <string name="expires_in">%s seconds</string>
+    <string name="alert_actkn">"Old one is expired, Please get a new token by clicking GET NEW AT button or else select Automatically Refresh checkbox and click GET NEW AT button "</string>
+    <string name="action_upload">upload</string>
+</resources>
